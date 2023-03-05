@@ -9,11 +9,12 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
+
       <a-marker
-        type="pattern"
-        url="https://raw.githubusercontent.com/narvaeze/examenAR/main/pattern-PATRON.patt"
+        type="pattern" preset="custom"
+        url="https://github.com/NarvaezE/examenAR/blob/main/pattern-PATRON.patt"
       >
-        <a-sphere radius="1" color="#EF2D5E"></a-sphere>
+        
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
