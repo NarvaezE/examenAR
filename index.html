@@ -12,13 +12,15 @@
       <a-assets>
           <a-asset-item id="glb-asset" src="burguer.glb"></a-asset-item>
       </a-assets>
-      <a-marker-camera preset="hiro">
+      <a-marker preset="hiro">
           <a-entity
-              animation-mixer
+              position="0 0 0"
+              scale="0.05 0.05 0.05"
               gltf-model="#glb-asset"
-              scale="0.2 0.2 0.2">
-          </a-entity>
-       </a-marker-camera>
+          
+          ></a-entity>
+       </a-marker>
+       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
