@@ -9,10 +9,12 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-
+      <a-assets>
+        <a-asset-item id="animated-asset" src="https://github.com/NarvaezE/examenAR/main/nobara-kugisaki-de-jujutsu-kaisen_3840x2160_xtrafondos.com.jpg"></a-asset-item>
+      </a-assets>
       <a-marker
         type="pattern" preset="custom"
-        url="https://github.com/NarvaezE/examenAR/blob/main/pattern-PATRON.patt"
+        url="https://github.com/NarvaezE/examenAR/main/pattern-marker.patt"
       >
         
       </a-marker>
