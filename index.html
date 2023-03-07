@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <!-- we import arjs version without NFT but with marker + location based support -->
+  <!-- we import arjs version without NFT but with marker-camera + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  </head>
+</head>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-assets>
@@ -15,32 +15,32 @@
           <a-asset-item id="glb-asset-2" src="sandwich.glb"></a-asset-item>
           <a-asset-item id="glb-asset-3" src="licuado.glb"></a-asset-item>
       </a-assets>
-      <a-marker type="pattern" url="https://narvaeze.github.io/examenAR/pattern-licuad.patt">
+      <a-marker-camera type="pattern" url="https://narvaeze.github.io/examenAR/pattern-licuad.patt">
         <a-entity
           position="0 0 0"
           scale="0.2 0.2 0.2"
           gltf-model="#glb-asset-3"
       
         ></a-entity>
-      </a-marker>
+      </a-marker-camera>
 
-      <a-marker type="pattern" url="https://narvaeze.github.io/examenAR/pattern-sandwich.patt">
+      <a-marker-camera type="pattern" url="https://narvaeze.github.io/examenAR/pattern-sandwich.patt">
         <a-entity
           position="0 0 0"
           scale="0.2 0.2 0.2"
           gltf-model="#glb-asset-2"
       
         ></a-entity>
-      </a-marker>
+      </a-marker-camera>
 
-      <a-marker type="pattern" url="https://narvaeze.github.io/examenAR/pattern-ham.patt">
+      <a-marker-camera type="pattern" url="https://narvaeze.github.io/examenAR/pattern-ham.patt">
         <a-entity
           position="0 0 0"
           scale="0.5 0.5 0.5"
           gltf-model="#glb-asset"
         ></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
+      </a-marker-camera>
+      <!-- <a-entity camera></a-entity> -->
     </a-scene>
   </body>
 </html>
