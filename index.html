@@ -40,7 +40,10 @@
           gltf-model="#glb-asset"
         ></a-entity>
       </a-marker-camera>
-      <!-- <a-entity camera></a-entity> -->
+      <a-entity camera look-controls position="0 1.6 0"></a-entity>
+      <a-entity id="rig" position="25 10 0">
+        <a-entity id="camera" camera look-controls></a-entity>
+      </a-entity>
     </a-scene>
   </body>
 </html>
