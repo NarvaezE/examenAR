@@ -11,25 +11,36 @@
     <a-scene embedded arjs>
       <a-assets>
           <a-asset-item id="glb-asset" src="burguer.glb"></a-asset-item>
+          <a-asset-item id="glb-asset-2" src="sandwich.glb"></a-asset-item>
+          <a-asset-item id="glb-asset-3" src="licuado.glb"></a-asset-item>
       </a-assets>
-      <!-- <a-marker preset="burrito">
-          <a-entity
-              position="0 0 0"
-              scale="0.2 0.2 0.2"
-              gltf-model="#glb-asset"
-          
-          ></a-entity>
-       </a-marker> -->
-
-       <a-marker type="pattern" url="https://narvaeze.github.io/examenAR/pattern-ham.patt">
+      <a-marker type="pattern" url="https://narvaeze.github.io/examenAR/pattern-licuad.patt">
         <a-entity
-            position="0 0 0"
-            scale="0.5 0.5 0.5"
-            gltf-model="#glb-asset"
-        
+          position="0 0 0"
+          scale="0.5 0.5 0.5"
+          gltf-model="#glb-asset-3"
+      
         ></a-entity>
-     </a-marker>
-       <a-entity camera></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" url="https://narvaeze.github.io/examenAR/pattern-sandwich.patt">
+        <a-entity
+          position="0 0 0"
+          scale="0.5 0.5 0.5"
+          gltf-model="#glb-asset-2"
+      
+        ></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" url="https://narvaeze.github.io/examenAR/pattern-ham.patt">
+        <a-entity
+          position="0 0 0"
+          scale="0.5 0.5 0.5"
+          gltf-model="#glb-asset"
+      
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
